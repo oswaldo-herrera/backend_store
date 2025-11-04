@@ -12,11 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "categoryName": {
       "type": "string"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "categoryName"
     },
     "articles": {
       "type": "relation",
@@ -26,6 +27,16 @@
     },
     "description": {
       "type": "text"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
