@@ -8,7 +8,7 @@ export default ({ env }) => ({
     // Debes indicar a Strapi que confíe en los encabezados X-Forwarded-* (que usa Render)
     proxy: true, 
     // Aseguramos que Strapi considere la conexión HTTPS
-    secure: true,
+    //secure: true,
   },
   // Opcional, pero a veces necesario:
   webhooks: {
