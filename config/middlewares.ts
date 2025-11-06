@@ -1,6 +1,7 @@
+
 export default [
   // 👇 Debe ir ANTES de session
-  'global::force-https',
+  { resolve: './src/middlewares/force-https' },
 
   'strapi::errors',
   'strapi::security',
